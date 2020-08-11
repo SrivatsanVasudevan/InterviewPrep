@@ -1,6 +1,6 @@
 /*
 Min moves to obtain string without 3 identical consecutive letters
-/*
+*/
 
 public static int noThreeIdenticalConsecutive(String word){
    if(word == null || word.length() == 0)return 0;
