@@ -1,6 +1,16 @@
 /*
 Number with equal digit sum
 */
+public static int getDigits(int num) {
+        int dupNum = num; // 51 71 17 42
+        int sum = 0;
+        while (dupNum > 0) {
+            sum += dupNum % 10;
+            dupNum /= 10;
+        }
+        return sum;
+    }
+
 
 public static int numWithEqualDigitSum(int[] nums){ // add to github tomorrow.
    if(nums == null || nums.length == 0)return -1;
